@@ -57,8 +57,8 @@
         <a href="index.html" class="logo d-flex align-items-center p-2">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
-          <i class="bi bi-camera"></i>
-          <h1>PhotoFolio</h1>
+          <img src="C:\Users\jaawh\Desktop\assets\logo_f.png"></img>
+          <h1>Picasoie</h1>
         </a>
 
         <nav id="navbar" class="navbar p-2">
@@ -76,24 +76,27 @@
                 <i class="bi bi-chevron-down dropdown-indicator"></i
               ></a>
               <div
-                style="width: 700px"
-                class="dropdown-menu"
+                class="dropdown-menu wide"
                 aria-labelledby="portfolioDropdown"
               >
                 <div class="row">
                   <div class="col-sm">
                     <h6 class="dropdown-header">BEAUX ARTS</h6>
-                    <a class="dropdown-item" href="#">Item 1</a>
-                    <a class="dropdown-item" href="#">Item 2</a>
-                    <a class="dropdown-item" href="#">Item 3</a>
-                    <a class="dropdown-item" href="#">Item 4</a>
-                    <a class="dropdown-item" href="#">Item 5</a>
-                    <a class="dropdown-item" href="#">Item 6</a>
+                    <ul class="list-inline">
+                      <li><a href="#">Item 1</a></li>
+                      <li><a href="#">Item 2</a></li>
+                      <li><a href="#">Item 3</a></li>
+                      <li><a href="#">Item 4</a></li>
+                      <li><a href="#">Item 5</a></li>
+                      <li><a href="#">Item 6</a></li>
+                    </ul>
                   </div>
                   <div class="col-sm">
                     <h6 class="dropdown-header">ART DIGITAL</h6>
-                    <a class="dropdown-item" href="#">Image Numerique</a>
-                    <a class="dropdown-item" href="#">Video</a>
+                    <ul class="list-inline">
+                      <li><a href="#">Image Numerique</a></li>
+                      <li><a href="#">Video</a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -104,22 +107,18 @@
                 ><span>Gallery</span>
                 <i class="bi bi-chevron-down dropdown-indicator"></i
               ></a>
-              <ul class="list-inline">
-                <li><a href="gallery.html">Nature</a></li>
-                <li><a href="gallery.html">People</a></li>
-                <li><a href="gallery.html">Architecture</a></li>
-                <li><a href="gallery.html">Animals</a></li>
-                <li><a href="gallery.html">Sports</a></li>
-                <li><a href="gallery.html">Travel</a></li>
+              <ul class="dropdown-menu list-inline">
+                
+                <li><a href="gallery.html">Conférence</a></li>
                 <li class="dropdown">
                   <a href="#"
-                    ><span>Sub Menu</span>
+                    ><span>Boutique</span>
                     <i class="bi bi-chevron-down dropdown-indicator"></i
                   ></a>
-                  <ul>
-                    <li><a href="#">Sub Menu 1</a></li>
-                    <li><a href="#">Sub Menu 2</a></li>
-                    <li><a href="#">Sub Menu 3</a></li>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Traveaux des Eleves</a></li>
+                    <li><a href="#">Boutique en ligne</a></li>
+                    
                   </ul>
                 </li>
               </ul>
@@ -141,17 +140,25 @@
 
     <!-- ======= Hero Section ======= -->
     <section
+    
       id="hero"
       style="background-image: url('your-image-url')"
-      class="hero d-flex flex-column justify-content-center align-items-center"
+      class="hero d-flex flex-column justify-content-center align-items-center video-wrapper"
       data-aos="fade"
       data-aos-delay="1500"
     >
+    <video playsinline autoplay muted loop poster="C:\Users\jaawh\Desktop\assets\pfe\video\vifposter.png">
+      <source src="C:\Users\jaawh\Desktop\assets\pfe\video\herovid1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+
+
       <div class="hero-overlay"></div>
       <div class="container h-100">
         <div class="row h-100 align-items-center">
           <div class="col-12 text-center d-flex flex-column align-items-center">
-            <h1 class="display-3 text-white mb-1">WELCOOOOOMMMMMEEEEEE</h1>
+            
             <div class="input-group search-group">
               <input
                 type="text"
