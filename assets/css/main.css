@@ -37,7 +37,7 @@
 body {
   font-family: var(--font-default);
   color: var(--color-default);
-  background-color: #ffffff;
+  background-color: #2d2d2d;
 }
 
 a {
@@ -296,14 +296,14 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 50px;
+  max-height: 60px;
   margin-right: 8px;
 }
 
 .header .logo h1 {
-  font-size: 35px;
+  font-size: 33px;
   margin: 0;
-  font-weight: 400;
+  font-weight: 700;
   color: #e5163c;
   font-family: var(--font-secondary);
 }
@@ -415,7 +415,7 @@ h6 {
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: var(--color-secondary);
+    background: rgba(0, 0, 0, 0.5);
     transition: 0.3s;
     border-radius: 4px;
   }
@@ -1259,13 +1259,14 @@ video {
 }
 .search-group {
   transition: width 0.75s;
+  margin-left: 100px;
   width: 200px;
   overflow: hidden;
   border-radius: 30px;
 }
 
 .search-group:focus-within {
-  width: 50%;
+  width: 80%;
 }
 
 .search-icon {
