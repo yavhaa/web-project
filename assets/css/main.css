@@ -37,7 +37,7 @@
 body {
   font-family: var(--font-default);
   color: var(--color-default);
-  background-color: #2d2d2d;
+  background-color: #ece7e7;
 }
 
 a {
@@ -288,7 +288,7 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 0px 0;
-  background-color: rgba(0, 0, 0, 0.577);
+  background-color: rgba(255, 255, 255, 0.67);
 }
 
 .header .logo {
@@ -365,6 +365,9 @@ h6 {
   .navbar .dropdown-menu.wide {
     width: 700px;
   }
+  .navul {
+    margin-left: 2000px;
+  }
 
   .navbar > ul {
     display: flex;
@@ -385,7 +388,7 @@ h6 {
     letter-spacing: 1px;
     font-size: 13px;
     font-weight: 400;
-    color: #ffffff;
+    color: #e5163c;
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -401,7 +404,7 @@ h6 {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover > a {
-    color: #ffffff;
+    color: #e5163c;
     font-weight: 700;
   }
 
@@ -415,7 +418,7 @@ h6 {
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.73);
     transition: 0.3s;
     border-radius: 4px;
   }
@@ -443,7 +446,7 @@ h6 {
 
   .navbar .dropdown:hover > .dropdown-menu {
     opacity: 1;
-    top: 100%;
+    top: 145%;
     visibility: visible;
   }
 

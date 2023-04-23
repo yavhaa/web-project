@@ -2,29 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Login - Gallery Website</title>
+    <title>Register - Gallery Website</title>
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
     />
     <style>
       body {
-        background-color: #f9a5b4;
+        background-color: #424242;
         font-family: Arial, sans-serif;
       }
 
-      .login-container {
-        margin-top: 150px;
-        max-width: 477px;
-        margin-left: auto;
-        margin-right: auto;
+      .register-container {
+        margin-top: 100px;
+        max-width: 400px;
         padding: 30px;
         background-color: #ffffff;
         border-radius: 5px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
       }
 
-      .login-container h2 {
+      .register-container h2 {
         text-align: center;
         margin-bottom: 30px;
         color: #e5163c;
@@ -50,7 +48,7 @@
         border-bottom: 2px solid #e5163c;
       }
 
-      .btn-login {
+      .btn-register {
         background-color: #e5163c;
         border: none;
         color: #ffffff;
@@ -62,17 +60,17 @@
         width: 100%;
       }
 
-      .btn-login:hover {
-        background-color: #f9a5b4;
+      .btn-register:hover {
+        background-color: #bf1230;
       }
 
-      .btn-register {
+      .btn-login {
         color: #e5163c;
         text-decoration: none;
         transition: color 0.3s ease;
       }
 
-      .btn-register:hover {
+      .btn-login:hover {
         color: #bf1230;
       }
     </style>
@@ -82,8 +80,8 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-6 col-md-8 col-sm-10">
-          <div class="login-container">
-            <h2>Login</h2>
+          <div class="register-container">
+            <h2>Register</h2>
             <form>
               <div class="form-group">
                 <label for="username">Username</label>
@@ -95,6 +93,15 @@
                 />
               </div>
               <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter email"
+                />
+              </div>
+              <div class="form-group">
                 <label for="password">Password</label>
                 <input
                   type="password"
@@ -103,14 +110,45 @@
                   placeholder="Enter password"
                 />
               </div>
-              <button type="submit" class="btn btn-login">Login</button>
+              <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="confirm-password"
+                  placeholder="Confirm password"
+                  onmouseleave="checkPassword()"
+                />
+              </div>
+              <div id="passerror" style="display: none">
+                <p class="error alert alert-danger" role="alert">
+                  les mots de passes ne sont pas conformes
+                </p>
+              </div>
+              <button type="submit" class="btn btn-register">Register</button>
             </form>
             <div class="text-center mt-4">
-              <a href="#" class="btn-register">Register</a>
+              <a href="#" class="btn btn-login">Login</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </body>
+  <script>
+    // 👇 pass the form into the function as a parameter
+    function checkPassword(form) {
+      // 👇 get passwords from the field using their name attribute
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirm-password").value;
+      const divv = document.getElementById("passerror");
+
+      // 👇 check if both match using if-else condition
+      if (password != confirmPassword) {
+        divv.style.display = "block";
+        return false;
+      }
+    }
+  </script>
 </html>
+``
